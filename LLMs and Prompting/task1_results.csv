@@ -1,0 +1,11 @@
+Task,Prompt,Expected,Qwen2.5-3B,SmolLM3-3B
+Logical Negation,"Which of the following is NOT a botanical berry: banana, grape, or peach? Answer with one word.",{peach},banana,"<think>
+Okay, let's see. The question is asking which of the three—banana, grape, or peach—is NOT a botanical berry. Hmm"
+Ambiguous Reference,The trophy didn't fit into the brown suitcase because it was too large. What was too large? Answer with one noun phrase only.,"{the trophy, trophy}",trophy,"<think>
+Okay, let's see. The question is asking what was too large, based on the sentence ""The trophy didn't fit into the brown"
+Constrained Output,"Write these three words in alphabetical order, separated by commas, with no spaces: green, blue, red.","{blue,green,red}","green,blue,red","<think>
+Okay, let's see. The user wants me to write the three words ""green,"" ""blue,"" and ""red"" in alphabetical order"
+Data Extraction,ROI 2021: 15%. ROI 2022: 12%. Give the 2022 ROI as a decimal. Answer with numbers only.,{0.12},0.12,"<think>
+Okay, let's see. The user is asking for the 2022 ROI as a decimal. They provided the 2021 ROI as"
+Counterfactual Reasoning,"If all birds suddenly lost their wings, could they still fly naturally? Answer yes or no only.",{No},No,"<think>
+Okay, so the question is: If all birds suddenly lost their wings, could they still fly naturally? I need to answer yes or no"

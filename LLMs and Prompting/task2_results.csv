@@ -1,0 +1,20 @@
+Task,Original Prompt,Expected,Zero-shot Output,Plan-and-Solve Output,Self-Refine Output
+Logical Negation,"Which of the following is NOT a botanical berry: banana, grape, or peach? Answer with one word only.",{peach},peach,"Stage 1: To answer correctly, I need to understand the botanical definition of a berry and then apply it to the given options.
+
+Stage 2: A botanical berry is a fleshy fruit",peach
+Ambiguous Reference,The trophy didn't fit into the brown suitcase because it was too large. What was too large? Answer with one noun phrase only.,"{the trophy, trophy}",The trophy was too large.,"Stage 1: To answer correctly, I need to identify the noun phrase that is too large, which is the only piece of information provided in the question.
+
+Stage 2: The question states,",trophy
+Constrained Output,"Write these three words in alphabetical order, separated by commas, with no spaces: blue, green, red. Output only the final string.","{blue,green,red}","blue,green,red","Stage 1: To answer correctly, I need to list the words ""blue,"" ""green,"" and ""red"" in alphabetical order, separated by commas, with no spaces.
+
+Stage 2:","blue, green, red"
+Data Extraction,ROI 2021: 15%. ROI 2022: 12%. Give the 2022 ROI as a decimal. Answer with numbers only.,{0.12},"To convert the ROI from percentage to decimal, divide the percentage by 100.
+
+For 2022 ROI: 12% / 100 = 0.12
+
+So, the 2022","Stage 1: To answer correctly, I need to convert the 2022 ROI of 12% into a decimal. This involves dividing the percentage by 100.
+
+Stage 2: 12",0.12
+Counterfactual Reasoning,"If all birds suddenly lost their wings, could they still fly naturally? Answer yes or no only.",{No},"No
+
+If all birds suddenly lost their wings, they would no longer be able to fly naturally. Wings are essential for flight in birds, and without them, they would be unable to generate the lift","Stage 1: To answer this question correctly, I need to consider the fundamental requirement for flight: the ability to generate lift through the movement of air over wings. If birds lose their wings, they",No
